@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --btn-color: green;
+}
+
+header,
+main {
+  padding: 50px 135px;
+}
+
+/* code for nav bar styling */
+
+.brnad-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brnad-container h1 {
+  font-size: 2rem;
+}
+
+.brnad-container span {
+  color: var(--btn-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  align-items: center;
+  font-size: larger;
+}
+
+.nav-items ul :nth-child(1) {
+  color: green;
+  font-weight: 700;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* hero section styling */
+
+.hero-section {
+  width: 100%;
+  height: 500px;
+  background-image: url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.709),
+    rgba(0, 0, 0, 0)
+  );
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.hero-section p {
+  margin: 25px auto;
+  width: 700px;
+  color: white;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 14px 10px;
+  width: 768px;
+}
+
+.when-box,
+.select-box,
+.where-box,
+.btn-box {
+  padding: 15px 10px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.where-box input {
+  background-color: transparent;
+  border: none;
+}
+
+.when-box input,
+select {
+  background-color: transparent;
+  border: none;
+}
+
+.select-box input,
+select {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-box {
+  padding: 15px 20px;
+  background-color: var(--btn-color);
+}
+
+.find-btn {
+  color: white;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ***************** */
+/* responsive code  */
+/* for mobile view */
+
+@media screen and (max-width: 576px) {
+  header,
+  main {
+    padding: 20px 30px;
+  }
+
+  /* nav section for mobile view */
+
+  .brnad-container img {
+    width: 5px;
+  }
+
+  .brnad-container h1 {
+    font-size: 1rem;
+  }
+
+  .nav-items ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* hero section for mobile view */
+
+  .hero-section {
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    width: 100%;
+    padding: 0px 20px;
+    font-size: 0.8rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+    width: 80%;
+  }
+
+  .when-box,
+  .select-box,
+  .where-box,
+  .btn-box {
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .where-box input {
+    margin-top: 10px;
+    margin-left: -16px;
+    text-align: start;
+  }
+
+  .when-box input,
+  select {
+    margin-top: 10px;
+    text-align: start;
+  }
+
+  .select-box input,
+  select {
+    margin-top: 10px;
+    text-align: start;
+  }
+
+  .btn-box {
+    background-color: var(--btn-color);
+  }
+
+  .btn-box button {
+    margin: auto;
+    margin-top: 5px;
+  }
+}
+
+/* ***************** */
+/* responsive for medium device */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header,
+  main {
+    padding: 20px 30px;
+
+    /* nav section medium devices */
+  }
+
+  .brnad-container h1 {
+    font-size: 2rem;
+  }
+
+  .nav-items ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    scale: 1.4;
+  }
+
+  /* hero section medium devices */
+
+  .hero-section {
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    width: 100%;
+    padding: 0 20ox;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+    width: 80%;
+  }
+
+  .when-box,
+  .select-box,
+  .where-box,
+  .btn-box {
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .where-box input {
+    margin-top: 10px;
+    margin-left: -16px;
+    text-align: start;
+  }
+
+  .when-box input,
+  select {
+    margin-top: 10px;
+    text-align: start;
+  }
+
+  .select-box input,
+  select {
+    margin-top: 10px;
+    text-align: start;
+  }
+
+  .btn-box {
+    background-color: var(--btn-color);
+  }
+
+  .btn-box button {
+    margin: auto;
+    margin-top: 5px;
+  }
+}
