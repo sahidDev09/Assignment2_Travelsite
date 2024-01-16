@@ -336,6 +336,7 @@ select {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
   border: solid rgba(222, 184, 135, 0.499) 2px;
+  transition: 0.2s ease-in-out;
 }
 
 .circle-profile {
@@ -499,6 +500,10 @@ footer{
   gap: 20px;
   font-size: 30px;
   justify-content: center;
+}
+
+.card-reviews:hover{
+  scale: 1.05;
 }
 
 /* ***************** */
