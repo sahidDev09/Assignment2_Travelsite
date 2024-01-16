@@ -312,12 +312,61 @@ select {
 }
 
 #price {
-  max-width:570px;
+  max-width: 570px;
   margin: 24px auto;
   border-radius: 16px;
   text-align: left;
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
+}
+
+/* code for styling  review section  */
+
+.review-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card-reviews {
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  border: solid rgba(222, 184, 135, 0.499) 2px;
+}
+
+.circle-profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profile-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-reviews p {
+  color: gray;
+  font-size: 14px;
+}
+
+.circle-profile img {
+  width: 70px;
+  border-radius: 50px;
+  border: 6px solid rgba(128, 128, 128, 0.179);
+}
+
+.review span {
+  color: var(--btn-color);
+}
+
+.review h1 {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 2.5rem;
 }
 
 /* ***************** */
@@ -455,11 +504,11 @@ select {
     text-align: center;
     font-size: 14px;
     color: gray;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 
   .destination-content h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   /* why choose us mobile view */
@@ -475,6 +524,17 @@ select {
 
   .why-section h1 {
     font-size: 1.5rem;
+  }
+
+  /* responsive reviews section mobile view */
+
+  .review-section {
+    grid-template-columns: 1fr;
+  }
+
+  .review h1 {
+    margin: 30px;
+    font-size: 1.7rem;
   }
 }
 
@@ -584,31 +644,9 @@ select {
     margin: 10px 0;
   }
 
-  /*  */
-  .img-cards {
-    display: flex;
-    flex-direction: row;
-  }
+  /* code for reviews responsive medium view */
 
-  .img1,
-  .img2,
-  .img3,
-  .img4,
-  .img5,
-  .img6,
-  .img7 {
-    border: solid 2px blue;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .img1,
-  .img2,
-  .img3,
-  .img4,
-  .img5,
-  .img6,
-  .img7 img {
-    width: 100%;
+  .review-section {
+    grid-template-columns: 1fr 1fr;
   }
 }
