@@ -177,6 +177,7 @@ select {
 }
 
 .btn-readmore {
+  cursor: pointer;
   padding: 15px 30px;
   background-color: var(--btn-color);
   color: white;
@@ -588,6 +589,7 @@ footer{
 
   .btn-box button {
     margin: auto;
+    cursor: pointer;
     margin-top: 5px;
   }
 
