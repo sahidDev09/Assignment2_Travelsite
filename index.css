@@ -337,20 +337,18 @@ select {
   width: 100%;
   margin: 30px 0;
   height: 500px;
-  border-radius:16px ;
+  border-radius: 16px;
   background-image: url("./Images/Group\ 39.png");
-
 }
 
-.deals-section h1{
+.deals-section h1 {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
   margin-top: 80px;
-
 }
 
-.deals-section >p{
+.deals-section > p {
   font-size: 1rem;
   font-weight: normal;
   text-align: center;
@@ -358,13 +356,11 @@ select {
   margin: 20px 0;
 }
 
-
 .available-info {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   padding: 30px;
-
 }
 
 .available-info h2 {
@@ -374,7 +370,7 @@ select {
 .goal-card-content {
   bottom: 50%;
   right: 5%;
-  transform: translate( 0%, 50%);
+  transform: translate(0%, 50%);
   position: absolute;
   width: 580px;
   height: 390px;
@@ -386,7 +382,7 @@ select {
 .goal-card-content2 {
   bottom: 50%;
   left: 5%;
-  transform: translate( 0%, 50%);
+  transform: translate(0%, 50%);
   position: absolute;
   width: 580px;
   height: 390px;
@@ -400,11 +396,11 @@ select {
   gap: 20px;
 }
 
-.available-info p{
+.available-info p {
   color: gray;
 }
 
-#btn{
+#btn {
   width: 200px;
 }
 
@@ -774,6 +770,52 @@ footer {
   .review h1 {
     margin: 30px;
     font-size: 1.7rem;
+  }
+
+  /* code for responsive goals section */
+
+  .goal-card-content {
+    width: 100%;
+  }
+
+  .available-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+  }
+
+  .available-info h2 {
+    font-weight: 500;
+  }
+
+  .goal-card-content2 {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+  }
+
+  .goal-card-content {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+  }
+
+  .clock {
+    display: none;
+  }
+
+  .available-info {
+    width: 100%;
+    height: auto;
   }
 
   /* code for responsive video section mobile view */
