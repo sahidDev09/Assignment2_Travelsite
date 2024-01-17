@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -197,37 +197,46 @@ select {
   height: auto;
 }
 
-.img-card-box1 {
+.maldives {
+  grid-area: maldives;
+}
+
+.indonesia {
+  grid-area: indonesia;
+}
+
+.srilanka {
+  grid-area: srilanka;
+}
+
+.nort {
+  grid-area: nort;
+}
+
+.kashmir {
+  grid-area: kashmir;
+}
+
+.bangladesh {
+  grid-area: bangladesh;
+}
+
+.bandorban {
+  grid-area: bandarban;
+}
+
+.img-card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-.img-card-box2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 20px;
-}
-
-.img-card-box3 {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-.img-card-box3 img {
-  width: 100%;
-  height: 286px;
-}
-
-.img-card-box2 img {
-  height: 286px;
+  gap: 20px;
+  grid-template-areas:
+    "maldives maldives indonesia indonesia"
+    "srilanka nort nort kashmir"
+    "bangladesh bangladesh bandarban bandarban";
 }
 
 .img-card-container img {
   width: 100%;
+  height: 300px;
   position: relative;
 }
 
@@ -321,6 +330,102 @@ select {
   background: rgba(233, 68, 68, 0.05);
 }
 
+/* code for styling goals and discounts section */
+
+.goals-cards {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  height: 500px;
+  border-radius:16px ;
+  background-image: url("./Images/Group\ 39.png");
+
+}
+
+.deals-section h1{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 80px;
+
+}
+
+.deals-section >p{
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  color: gray;
+  margin: 20px 0;
+}
+
+
+.available-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px;
+
+}
+
+.available-info h2 {
+  font-weight: 500;
+}
+
+.goal-card-content {
+  bottom: 50%;
+  right: 5%;
+  transform: translate( 0%, 50%);
+  position: absolute;
+  width: 580px;
+  height: 390px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+
+.goal-card-content2 {
+  bottom: 50%;
+  left: 5%;
+  transform: translate( 0%, 50%);
+  position: absolute;
+  width: 580px;
+  height: 390px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+
+.goal-upper {
+  display: flex;
+  gap: 20px;
+}
+
+.available-info p{
+  color: gray;
+}
+
+#btn{
+  width: 200px;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price {
+  color: orangered;
+}
+
+.clock p {
+  color: gray;
+}
+
+.clock i {
+  color: orangered;
+}
+
 /* code for styling  review section  */
 
 .review-section {
@@ -374,7 +479,7 @@ select {
 /* code for styling ad section */
 
 .ad-video-section {
-  margin-top: 70px;
+  margin: 100px 0;
   display: flex;
   gap: 40px;
   align-items: center;
@@ -399,8 +504,6 @@ select {
 
 .video {
   border-radius: 8px;
-  height: 100%;
-  width: 100%;
 }
 
 /* code for styling newsletter section */
@@ -413,9 +516,9 @@ select {
   margin: 50px auto;
 }
 
-.news-img {
+/* .news-img {
   width: 100%;
-}
+} */
 
 .input-form {
   display: flex;
@@ -467,25 +570,26 @@ select {
 }
 
 .discount-off {
-  transform: translateY(-160%) rotate(-27.628deg);
+  transform: rotate(-27.628deg);
   right: 0;
+  bottom: 20%;
 }
 
 /* code for styling footer section */
 
-.footer-content{
+.footer-content {
   display: flex;
   gap: 15px;
   align-items: center;
   justify-content: center;
 }
 
-footer p{
+footer p {
   width: 70%;
   margin: 0 auto;
 }
 
-footer{
+footer {
   background: rgba(19, 19, 24, 0.05);
   text-align: center;
   display: flex;
@@ -495,14 +599,14 @@ footer{
   justify-content: center;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   gap: 20px;
   font-size: 30px;
   justify-content: center;
 }
 
-.card-reviews:hover{
+.card-reviews:hover {
   scale: 1.05;
 }
 
@@ -618,23 +722,20 @@ footer{
 
   /* image card responsive for mobile view */
 
-  .img-card-box1 {
-    grid-template-columns: 1fr;
+  .img-card-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "maldives"
+      "indonesia"
+      "srilanka"
+      "nort"
+      "kashmir"
+      "bangladesh"
+      "bandarban";
   }
 
-  .img-card-box2 {
-    grid-template-columns: 1fr;
-  }
-  .img-card-box3 {
-    margin-top: 20px;
-    grid-template-columns: 1fr;
-  }
-
-  .img-card-box3 img {
-    width: 100%;
-  }
-
-  .img-card-box2 img {
+  .img-card-container img {
     height: 200px;
   }
 
@@ -685,15 +786,21 @@ footer{
     align-items: center;
   }
 
+  .video {
+    width: 100%;
+  }
+
   /* newsletter for mobile */
 
   .newsletter-section {
-
     grid-template-columns: 1fr;
     align-items: center;
     gap: 10px;
     margin: 20px 0;
+  }
 
+  .news-img {
+    width: 100%;
   }
 
   .discount-off {
@@ -706,35 +813,34 @@ footer{
     font-weight: 400;
   }
 
-  .discount-off h4{
+  .discount-off h4 {
     font-size: 1rem;
     font-weight: 400;
   }
-  .discount-off h2{
+  .discount-off h2 {
     font-size: 1.2rem;
   }
-  
+
   .discount-off {
-    transform: translateY(-80%) rotate(-27.628deg);
+    transform: rotate(-27.628deg);
     right: 0;
   }
 
   /* responsive footer for mobile view */
 
-  .footer-content{
+  .footer-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
     justify-content: center;
   }
-  
-  footer p{
+
+  footer p {
     width: 90%;
     margin: 0 auto;
     font-size: 14px;
   }
-
 }
 
 /* pupular section for mobile view */
@@ -851,17 +957,15 @@ footer{
 
   /* ad video section medium view */
 
-  .ad-video-section{
+  .ad-video-section {
     flex-direction: column;
   }
 
   .newsletter-section {
-
     grid-template-columns: 1fr;
     align-items: center;
     gap: 10px;
     margin: 20px 0;
-
   }
 
   .discount-off {
