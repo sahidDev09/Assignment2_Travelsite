@@ -2,9 +2,19 @@
 
 Welcome to Fly Associate, a beautifully designed travel website built using HTML and pure CSS. This website features a clean and modern design, making use of various CSS techniques to enhance user experience.
 
-## Video Presentation
+## Image Presentation
 
-[![Fly Associate Video Presentation](https://img.youtube.com/vi/ruxmuk/0.jpg)](https://streamable.com/e/ruxmuk?autoplay=1)
+### Landing Page
+
+![Landing Page](https://i.ibb.co/Dk918wG/SCR-20240626-nefj.jpg)
+
+### Grid Image
+
+![Grid Image](https://i.ibb.co/Y8TvRK6/SCR-20240626-nehn.jpg)
+
+### Review Section with Hover Animation
+
+![Review Section](https://i.ibb.co/SK2rfhv/SCR-20240626-nejm.png)
 
 ## Live Preview
 
@@ -27,5 +37,11 @@ Check out the live preview of the website: [Fly Associate Live Preview](https://
 - **CSS**: For styling the website, including animations and responsive design.
 - **Figma**: For designing the layout and components before development.
 
+## Getting Started
 
+To view or modify the project, follow these steps:
 
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sahiddev09/Assignment2_Travelsite.git
+   ```
