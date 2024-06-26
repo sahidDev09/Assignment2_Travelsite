@@ -18,7 +18,7 @@ Welcome to Fly Associate, a beautifully designed travel website built using HTML
 
 ## Live Preview
 
-Check out the live preview of the website: [Fly Associate Live Preview](https://sahiddev09.github.io/Assignment2_Travelsite/)
+Check out the live preview of the website: [Fly Associate Live Preview](https://sahiddev09.github.io/Fly-Associate-A2/)
 
 ## Features
 
